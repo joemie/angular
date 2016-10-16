@@ -3,6 +3,7 @@ var router_1 = require('@angular/router');
 var dashboard_component_1 = require('./dashboard.component');
 var heroes_component_1 = require('./heroes.component');
 var hero_detail_component_1 = require('./hero-detail.component');
+var abilities_component_1 = require('./abilities.component');
 var appRoutes = [
     {
         path: '',
@@ -20,6 +21,10 @@ var appRoutes = [
     {
         path: 'detail/:id',
         component: hero_detail_component_1.HeroDetailComponent
+    },
+    {
+        path: 'abilities',
+        componenet: abilities_component_1.AbilitiesComponent
     }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);

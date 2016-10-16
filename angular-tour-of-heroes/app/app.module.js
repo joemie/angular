@@ -21,6 +21,7 @@ var heroes_component_1 = require('./heroes.component');
 var hero_detail_component_1 = require('./hero-detail.component');
 var hero_search_component_1 = require('./hero-search.component');
 var hero_service_1 = require('./hero.service');
+var abilities_component_1 = require('./abilities.component');
 require('./rxjs-extensions');
 var AppModule = (function () {
     function AppModule() {
@@ -49,11 +50,16 @@ var AppModule = (function () {
                     {
                         path: 'heroes',
                         component: heroes_component_1.HeroesComponent
+                    },
+                    {
+                        path: 'abilities',
+                        component: abilities_component_1.AbilitiesComponent
                     }
                 ])
             ],
             declarations: [
                 app_component_1.AppComponent,
+                abilities_component_1.AbilitiesComponent,
                 dashboard_component_1.DashboardComponent,
                 hero_detail_component_1.HeroDetailComponent,
                 heroes_component_1.HeroesComponent,

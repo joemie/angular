@@ -14,6 +14,7 @@ import { HeroesComponent }     from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroSearchComponent } from './hero-search.component';
 import { HeroService }         from './hero.service';
+import { AbilitiesComponent }  from './abilities.component';
 
 import './rxjs-extensions';
 
@@ -41,11 +42,16 @@ import './rxjs-extensions';
       {
         path: 'heroes',
         component: HeroesComponent
+      },
+      {
+        path: 'abilities',
+        component: AbilitiesComponent
       }
     ])
   ],
   declarations: [
     AppComponent,
+    AbilitiesComponent,
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
